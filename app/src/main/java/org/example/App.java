@@ -4,18 +4,14 @@
 
 package org.example;
 
-import org.example.LibraryA;
-import org.example.LibraryB;
-
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
         LibraryA libA = new LibraryA();
         LibraryB libB = new LibraryB();
 
-        System.out.println(new App().getGreeting());
+        System.out.println(libA.message());
+        System.out.println(libB.message());
     }
+
 }

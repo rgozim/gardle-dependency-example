@@ -1,0 +1,9 @@
+task clean {
+    description "Calls clean on all subprojects"
+    dependsOn gradle.includedBuilds*.task(':clean')
+}
+
+task publishToMavenLocal {
+    description "Calls publishToMavenLocal on all subprojects"
+    dependsOn gradle.includedBuilds*.task(':publishToMavenLocal')
+}
