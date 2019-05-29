@@ -1,0 +1,3 @@
+includeBuild "libb"
+includeBuild "liba"
+includeBuild "app"
